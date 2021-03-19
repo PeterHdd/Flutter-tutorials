@@ -1,4 +1,4 @@
-# Firebase-Flutter Tutorials
+# Flutter Tutorials
 ## Repository Containing Source code for tutorials found here:
 
 https://petercoding.com

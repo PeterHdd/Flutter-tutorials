@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:shared_preferences_tutorial/user.dart';
+import 'package:shared_preferences_tutorial/payment.dart';
 
 void main() async{
   runApp(MyApp());

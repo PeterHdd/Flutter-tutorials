@@ -1,0 +1,90 @@
+{
+    "balance" : "3,048",
+    "transactions" : [
+        {
+            "name" : "Apple Store",
+            "type" : "Shopping",
+            "amount": -125
+        },
+        {
+            "name" : "YouTube",
+            "type" : "Social Media",
+            "amount": -15
+        },
+        {
+            "name" : "Amazon Shop ",
+            "type" : "Shopping",
+            "amount": -248
+        },
+        {
+            "name" : "Netflix",
+            "type" : "Social Media",
+            "amount": -10
+        },
+        {
+            "name" : "Walmart",
+            "type" : "Shopping",
+            "amount": -300
+        },
+        {
+            "name" : "Nike Store",
+            "type" : "Shopping",
+            "amount": -210
+        },
+        {
+            "name" : "Starbucks",
+            "type" : "Drinking",
+            "amount": -30
+        },
+        {
+            "name" : "Costa Coffee",
+            "type" : "Drinking",
+            "amount": -15
+        },
+        {
+            "name" : "Bubble Shop",
+            "type" : "Shopping",
+            "amount": -112
+        },
+        {
+            "name" : "Bubbles Shop",
+            "type" : "Shopping",
+            "amount": -112
+        },
+        {
+            "name" : "Clothing Shop",
+            "type" : "Shopping",
+            "amount": -102
+        },
+        {
+            "name" : "Market Shop",
+            "type" : "Shopping",
+            "amount": -22
+        },
+        {
+            "name" : "Food Shop",
+            "type" : "Shopping",
+            "amount": -132
+        },
+        {
+            "name" : "Shoes Shop",
+            "type" : "Shopping",
+            "amount": -31
+        },
+        {
+            "name" : "ShopX",
+            "type" : "Shopping",
+            "amount": -391
+        },
+        {
+            "name" : "ShopY",
+            "type" : "Shopping",
+            "amount": -51
+        },
+        {
+            "name" : "ShopZ",
+            "type" : "Shopping",
+            "amount": -31
+        }
+    ]
+}

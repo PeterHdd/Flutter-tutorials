@@ -99,22 +99,20 @@ class _FeedBackPageState extends State<FeedBackPage> {
                   padding: EdgeInsets.all(20.0),
                   child: ElevatedButton(
                     style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.resolveWith<Color>(
-                          (Set<MaterialState> states) {
-                            if (states.contains(MaterialState.pressed))
+                        backgroundColor: WidgetStateProperty.resolveWith<Color>(
+                          (Set<WidgetState> states) {
+                            if (states.contains(WidgetState.pressed))
                               return Theme.of(context)
                                   .colorScheme
                                   .primary
                                   .withOpacity(0.5);
-                            else if (states.contains(MaterialState.disabled))
+                            else if (states.contains(WidgetState.disabled))
                               return Colors.grey;
                             return Colors.blue; // Use the component's default.
                           },
                         ),
-                        shape:
-                            MaterialStateProperty.all<RoundedRectangleBorder>(
-                                RoundedRectangleBorder(
+                        shape: WidgetStateProperty.all<RoundedRectangleBorder>(
+                            RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(40.0),
                         ))),
                     onPressed: _enableBtn

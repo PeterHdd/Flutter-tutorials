@@ -23,14 +23,15 @@ class MyHomePage extends StatelessWidget {
             Consumer<CounterViewModel>(builder: (context, viewModel, child) {
               return Text(
                 '${viewModel.counter}',
-                style: Theme.of(context).textTheme.headline4,
+                style: Theme.of(context).textTheme.headlineMedium,
               );
             }),
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: Provider.of<CounterViewModel>(context,listen: false).incrementCounter,
+        onPressed: Provider.of<CounterViewModel>(context, listen: false)
+            .incrementCounter,
         tooltip: 'Increment',
         child: Icon(Icons.add),
       ),

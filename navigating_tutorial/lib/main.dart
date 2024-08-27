@@ -16,11 +16,13 @@ class MyApp extends StatelessWidget {
         '/': (context) => MyHomePage(),
         '/named-route': (context) => NamedRoutePage(),
       },
-      onGenerateRoute: (settings){
-        if(settings.name == "/generate-route"){
+      onGenerateRoute: (settings) {
+        if (settings.name == "/generate-route") {
           final String arguments = settings.arguments as String;
-          return MaterialPageRoute(builder: (context) => GenerateRoutePage(value: arguments));
+          return MaterialPageRoute(
+              builder: (context) => GenerateRoutePage(value: arguments));
         }
+        return null;
       },
       debugShowCheckedModeBanner: false,
       title: 'Navigation Tutorial',
@@ -60,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 result = await Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => SecondPage(page:"second page")),
+                      builder: (context) => SecondPage(page: "second page")),
                 );
                 setState(() {});
               }),
@@ -68,13 +70,15 @@ class _MyHomePageState extends State<MyHomePage> {
             ElevatedButton(
               child: Text("Navigate to Named Route"),
               onPressed: (() {
-                Navigator.pushNamed(context, "/named-route", arguments: "Named Route Page");
+                Navigator.pushNamed(context, "/named-route",
+                    arguments: "Named Route Page");
               }),
             ),
-             ElevatedButton(
+            ElevatedButton(
               child: Text("Navigate to Generated Route"),
               onPressed: (() {
-                Navigator.pushNamed(context, "/generate-route", arguments: "Generate Route");
+                Navigator.pushNamed(context, "/generate-route",
+                    arguments: "Generate Route");
               }),
             ),
             Text(result ?? ""),

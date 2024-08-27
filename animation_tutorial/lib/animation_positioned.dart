@@ -15,7 +15,7 @@ class _AnimationPostionedState extends State<AnimationPostioned> {
   @override
   Widget build(BuildContext context) {
     return Stack(
-      alignment:  Alignment.topCenter,
+      alignment: Alignment.topCenter,
       children: <Widget>[
         AnimatedPositioned(
             width: 200,
@@ -27,15 +27,17 @@ class _AnimationPostionedState extends State<AnimationPostioned> {
               color: Colors.teal,
             )),
         Positioned(
-          top: 20,
+            top: 20,
             child: ElevatedButton(
-              style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.teal)),
-                onPressed: () {
-                  setState(() {
-                    selected = !selected;
-                  });
-                },
-                child: const Text("click me"),))
+              style: ButtonStyle(
+                  backgroundColor: WidgetStateProperty.all(Colors.teal)),
+              onPressed: () {
+                setState(() {
+                  selected = !selected;
+                });
+              },
+              child: const Text("click me"),
+            ))
       ],
     );
   }
